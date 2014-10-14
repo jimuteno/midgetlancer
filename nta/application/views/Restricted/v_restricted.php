@@ -1,0 +1,1 @@
+<h1>You have tried to access a restricted page and you failed </h1>

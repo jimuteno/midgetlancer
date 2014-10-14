@@ -1,0 +1,32 @@
+
+
+#custom_main_div {
+
+height: 280px;
+width: 300px;
+border:2px solid;
+border-radius:25px;
+opacity:0.8;
+
+margin:0 auto;"
+/* box-shadow: 10px 10px 5px #888888; */
+-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#custom_app_div {
+width: 500px;
+border-radius:25px;
+margin:0 auto;"
+-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.form-signin {
+max-width: 500px;
+padding: 15px;
+margin: 0 auto;}

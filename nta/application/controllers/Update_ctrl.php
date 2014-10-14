@@ -1,0 +1,32 @@
+<?php
+class Update_ctrl extends CI_Controller{
+function __construct(){
+parent::__construct();
+$this->load->model('update_model');
+}
+function index() {
+
+$this->load->view('Atester/Update_view', $data);
+var_dump($data);
+}
+
+function show_student_id() {
+$id = $this->uri->segment(3);
+$data['students'] = $this->update_model->show_students();
+$data['single_student'] = $this->update_model->show_student_id($id);
+$this->load->view('Atester/Update_view', $data);
+$this->load->view('header');
+}
+function update_student_id1() {
+$id= $this->input->post('did');
+$data = array(
+'Student_name' => $this->input->post('dname'),
+'Student_email' => $this->input->post('demail'),
+'Student_mobile' => $this->input->post('dmobile'),
+'Student_address' => $this->input->post('daddress')
+);
+$this->update_model->update_student_id1($id,$data);
+$this->show_student_id();
+}
+}
+?>
